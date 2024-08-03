@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+
+    <div class="container">
+        <header class="header">
+            <img  class="logo" src="imagenes/Frame 6.png" alt="">
+        </header>
+
+        <div class="encriptador">
+          <textarea name="texto" class="texto" id="texto" placeholder="Ingresa el texto aqui"></textarea>  
+        </div>
+        <div class="terminos">
+            <img  class="exclamacion"src="imagenes/signo-de-exclamacion.jpg" width="20px" height="20px">
+            <p>Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="botones">
+            <button class="btn_encriptar" type="button" onclick="encriptar()">Encriptar</button>
+            <input type="button" class="btn_desencriptar" value="Desencriptar" onclick="desencriptar()"/>
+        </div>
+    
+    <div class="encriptado">
+        <img src="imagenes/buho.jpg" alt="" id="monacho">
+        <div class="mensaje_encriptado" id="mensaje_encriptado">
+            <h2 id="titulo_mensaje">Ningun mensaje fue encontrado</h2>
+            <p id="parrafo">Ingresa el texto que desees encriptar o desencriptar</p>
+
+     <!--<textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>-->
+
+        </div>
+        <div class="botones" id="resultado">
+            <button class="btn_copiar" type="button" onclick="copiar()">Copiar</button>
+        </div>
+    </div> 
+</div>
+    
+        <footer class="footer">
+            <p>Desarrollado por Mariana Roncancio</p>
+                <a class="github"href="https://github.com/">
+                 <img src="imagenes/github.png"width="20px" height="20px"></a>
+                 <a class="linkedin"href="https://co.linkedin.com/">
+                    <img src="imagenes/49408.png" width="20px" height="20px"></a>
+                 <a class="instagram" href="https://www.instagram.com/">
+                    <img src="imagenes/Instagram.jpg" width="20px" height="20px"></a>
+        
+      </footer>
+    <script src="app.js"></script>
+</body>
+</html>
